@@ -4,11 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
-    <title>Task-List</title>
+    <title>To-Do List</title>
 </head>
 <body>
    <header>
-    <h1>Task List</h1>
+    <h1>To-Do List</h1>
    </header>
    <div class="container">
         <input type="text" class="task-input" id="task" placeholder="add">
@@ -18,12 +18,12 @@
     <button class="delete-button" onclick="deletetask">Delete</button>
    </div>
    <div>
-    <ul id="To-Do">
-        <li>Morning jog</li>
-        <li>Grocery Shopping</li>
-        <li>Book Trips</li>
-        <li>Organize office</li>
-        <li>Watch Coding Videos</li>
+    <ul class="selectable-list">
+        <input type="checkbox" class="list-checkbox"><li>Morning jog</li>
+        <input type="checkbox" class="list-checkbox"><li>Grocery Shopping</li>
+        <input type="checkbox" class="list-checkbox"><li>Book Trips</li>
+        <input type="checkbox" class="list-checkbox"><li>Organize office</li>
+        <input type="checkbox" class="list-checkbox"><li>Watch Coding Videos</li>
       </ul>
    </div>
 </body>

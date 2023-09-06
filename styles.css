@@ -25,6 +25,9 @@ header {
     padding: 5px;
     border: 1px solid #000000;
     border-radius: 3px;
+    width: 200px;
+    height: 20px;
+    
 }
 .delete-button {
     background-color:red;
@@ -40,3 +43,15 @@ header {
 .add-button:hover {
     background-color: #9cd7ff;
 }
+ul li {
+    cursor: pointer;
+    position: relative;
+    padding: 12px 8px;
+    background: #eee;
+    font-size: 18px;
+}
+.selectable-list {
+    list-style: none;
+    padding: 0;
+  }
+  
