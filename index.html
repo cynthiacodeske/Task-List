@@ -11,20 +11,39 @@
     <h1>To-Do List</h1>
    </header>
    <div class="container">
-        <input type="text" class="task-input" id="task" placeholder="add">
-        <button class="add-button" onclick="addtask">Submit</button>
-   </div>
-   <div class="delete">
-    <button class="delete-button" onclick="deletetask">Delete</button>
-   </div>
-   <div>
-    <ul class="selectable-list">
-        <input type="checkbox" class="list-checkbox"><li>Morning jog</li>
-        <input type="checkbox" class="list-checkbox"><li>Grocery Shopping</li>
-        <input type="checkbox" class="list-checkbox"><li>Book Trips</li>
-        <input type="checkbox" class="list-checkbox"><li>Organize office</li>
-        <input type="checkbox" class="list-checkbox"><li>Watch Coding Videos</li>
-      </ul>
-   </div>
+        <form class="form">
+                <input type="text" class="task-input" id="task" placeholder="add">
+                <button class="add-button" onclick="addtask">Submit</button>
+        </form>
+        <div>
+            <ul class="selectable-list">
+                <div class="task-items">
+                    <input type="checkbox" class="list-checkbox">
+                    <li>Morning jog</li>
+                    <button>Delete</button>
+                </div>
+                <div class="task-items">
+                    <input type="checkbox" class="list-checkbox">
+                    <li>Grocery Shopping</li>
+                    <button>Delete</button>
+                </div>
+                <div class="task-items">
+                    <input type="checkbox" class="list-checkbox">
+                    <li>Book Trips</li>
+                    <button>Delete</button>
+                </div>
+                <div class="task-items">
+                    <input type="checkbox" class="list-checkbox">
+                    <li>Organize office</li>
+                    <button>Delete</button>
+                </div>
+                <div class="task-items">
+                    <input type="checkbox" class="list-checkbox">
+                    <li>Watch Coding Videos</li>
+                    <button>Delete</button>
+                </div>
+            </ul>
+        </div>
+    </div>
 </body>
 </html>

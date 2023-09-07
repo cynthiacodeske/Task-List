@@ -1,11 +1,11 @@
-body {
+* {
     font-family: Arial, sans-serif;
-    background-color: #f0f0f0;
     margin: 0;
     padding: 0;
+    align-items: center; 
 }
 header {
-    background-color: black;
+    background-color: rgb(0, 140, 255);
     color: white;
     text-align: center;
     padding: 5px;
@@ -14,44 +14,66 @@ header {
   border-radius: 5px; 
   padding: 20px;
   background-color:white;
+  align-items: center;
+  max-width: 500px;
+  margin:0 auto;
+}
+form input[type="text"] {
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    box-shadow: 0 0 5px black;
+    flex-grow: 1;
 }
 .add-button {
     cursor: pointer;
-    padding: auto;
-    border-radius: 2px;
+    padding: 15px 15px;
+    border-radius: 5px;
     border: none;
+    background-color: rgb(29, 147, 249);
+    color: #fff;
+    height: 50px;
+    width: 70px;
 }
 .task-input {
     padding: 5px;
     border: 1px solid #000000;
     border-radius: 3px;
     width: 200px;
-    height: 20px;
+    height: 30px;
     
 }
-.delete-button {
-    background-color:red;
-    color: #fff;
-    border: none;
-    padding: 5px 10px;
-    cursor: pointer;
-    border-radius: 3px;
-}
-.delete-button:hover {
-    background-color: #ed6253;
-}
 .add-button:hover {
-    background-color: #9cd7ff;
+    background-color: #03ca35;
 }
 ul li {
     cursor: pointer;
     position: relative;
     padding: 12px 8px;
-    background: #eee;
     font-size: 18px;
 }
 .selectable-list {
     list-style: none;
     padding: 0;
+    align-items: center;
+    position: relative;
+    width: 100%;
+  }
+  .task-items {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .task-items button {
+    background-color: blue;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  .task-items button:hover {
+    background-color: red;
   }
   
